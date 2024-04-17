@@ -1,0 +1,32 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+nav, .nav-right, .nav-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(56, 30, 59);
+}
+nav, img{
+    height: 80px;
+    padding: 12px 0px 12px 30px;
+
+}
+nav, h3{
+    color: white;
+
+}
+.nav-right{
+    color: white;
+    list-style-type: none;
+}
+
+nav, .nav-right, .nav-item, .nav-link{
+    padding: 10px;
+
+}
+.nav-link:hover{
+    font-weight: bold;
+    font-size: 20px;
+}
