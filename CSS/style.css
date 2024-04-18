@@ -15,6 +15,7 @@ nav, img{
 }
 nav, h3{
     color: white;
+    border-bottom: 2px black solid;
 
 }
 .nav-right{
