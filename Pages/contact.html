@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="/Logo 1.png">
+</head>
+<style>
+  *{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+  
+  body{
+    font-family: 'Lato', sans-serif;  
+  }
+  
+  .row{
+    width: 100%;
+  }
+  
+  .menu-title{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .container{
+   position: relative;
+   top:60px;
+   margin: 15px; 
+  }
+  
+  .item{
+    position: relative;
+    top: 0;
+    background-color:#b9b4b4;
+    margin: 15px;
+    padding: 25px;
+    border-radius: 12px;
+  }
+  
+  .item p{
+    margin-top: 50px;
+    text-align: left;
+    font-size:100%;
+  }
+
+  .menu-title{
+    font-weight: bold;
+    color:#3e0303 ;
+  }
+
+  .item-title{
+    position: absolute;
+    top:0;
+    right: 0px;
+    padding: 6px 90px;
+    border-bottom-left-radius: 12px;
+  }
+  
+  #title-one {
+    background-color: #3e0303;
+  } 
+  
+  #title-two{
+    background-color: #3e0303;
+  }
+  
+  #title-three{
+    background-color: #3e0303;
+  }
+  
+  /* Simple Responsive Framework. */
+  /*------ Desktop ------*/
+  @media (min-width: 992px){
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+      float: left;  
+    }
+    .col-lg-1 {
+      width: 8.33%;
+    }
+    .col-lg-2 {
+      width: 16.66%;
+    }
+    .col-lg-3 {
+      width: 25%;
+    }
+    .col-lg-4 {
+      width: 33.33%;
+    }
+    .col-lg-5 {
+      width: 41.66%;
+    }
+    .col-lg-6 {
+      width: 50%;
+    }
+    .col-lg-7 {
+      width: 58.33%;
+    }
+    .col-lg-8 {
+      width: 66.66%;
+    }
+    .col-lg-9 {
+      width: 74.99%;
+    }
+    .col-lg-10 {
+      width: 83.33%;
+    }
+    .col-lg-11 {
+      width: 91.66%;
+    }
+    .col-lg-12 {
+      width: 100%;
+    }
+  
+  }
+  
+  
+  /*------ Tablet ------*/
+  @media (min-width: 768px) and (max-width: 991px){
+    .col-lg-4 {
+      width: 50%;
+      float: left;
+    }
+    .col-lg-tablet{
+     width: 100%;
+     float: left;
+   }
+  }
+
+
+  nav, .nav-right, .nav-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(56, 30, 59);
+}
+
+
+nav, h3{
+    color: white;
+
+}
+.nav-right{
+    color: white;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.nav-link{  
+   padding: 15px;
+
+}
+.nav-link:hover{
+    border-bottom: 2px solid white;
+}
+
+nav img{
+    height: 60px;
+    padding-left: 35px;
+    padding-right: 35px;
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 10px;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.contact-info,
+.map {
+    width: 40%; /* Make sections stack on small screens */
+    
+}
+
+.contact-info img {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.map iframe {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 10px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+.contact-info, img .pic1{
+    height: 28%;
+    width: 50%;
+}
+footer{
+  margin-top: 200px;
+  padding: 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background: rgb(56, 30, 59);
+  color: white;
+  text-align: center;
+  line-height: 10px;
+}
+
+</style>
+
+<body>
+  <nav>
+    <p><a href="/index.html">
+        <img src="/Logo 1.png" alt="index.html"></a></p>  
+    <h3>
+        Cambodia Education
+    </h3> 
+    <ul class="nav-right">
+        <li class="nav-item">
+            <a href="/index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a href="/Pages/about.html" class="nav-link" target="_blank">About</a>
+        </li>
+        <li class="nav-item">
+            <a href="login.html" class="nav-link">Login</a>
+        </li>
+    </ul>
+</nav>
+<header>
+    
+  </header>
+
+  <main>
+    <section class="contact-info">
+        <h2>Contact Us</h2><br>
+      <p>We are here to answer any questions you may have.</p>
+      <p>Email: <a href="#">cambodia_education@camedu.edu.kh</a></p> <br>
+      <img class="pic1" src="/CamEd Building Updated-E.jpg" alt="School Image">
+    </section>
+    <section class="map">
+        <h2>Our Location</h2><br>
+        <p>Address: #123ABC, Sangkat ABC, Khan DEF, Phnom Penh, Cambodia</p>
+        <p>Tel: 023 123 456, 015 123 456</p><br>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15634.780747486471!2d104.89878501738282!3d11.57369535094108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109514442da53f3%3A0x101b66669f6fb459!2sCamEd%20Business%20School!5e0!3m2!1sen!2skh!4v1713967943188!5m2!1sen!2skh"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"" width="100%" height="390" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-item">
+      <p>&copy; 2024 Cambodia Eduation Co., Ltd.</p>
+      <p>Email: cambodia_education@camedu.edu.kh</p>
+      <p>Tel: 023 123 456, 015 123 456</p>
+      <p>Address: #123ABC, Sangkat ABC, Khan DEF, Phnom Penh, Cambodia</p>
+    </div>
+  </footer>
+  
+    
+</body>
+</html>    
+</body>
+</html>
